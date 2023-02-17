@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 2rem;
+}
+
+.tape {
+    display: flex;
+    width: 275%;
+    transform: translateX(-700px);
+    overflow: hidden;
+}
