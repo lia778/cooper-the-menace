@@ -1,17 +1,121 @@
+@font-face {
+    font-family: francesco-regular;
+    src: url(./fonts/francescoweb-regular-TRIAL.woff);
+}
+
+@font-face {
+    font-family: francesco-italic;
+    src: url(./fonts/francescoweb-italic-TRIAL.woff);
+}
+
+.container {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
 body {
-    background-color: black;
-    color: red;
+    font-family: francesco-regular;
+    font-weight: 600;
+    background-color: rgb(14, 14, 14);        
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 48px;
 }
 
 h1 {
     text-align: center;
-    font-size: 100px;
-    margin-top: 2rem;
+    font-size: 150px;
+    margin-top: 5rem;
+    color: #ff6060;
+    text-align: center;
+    -webkit-animation: glow .25s ease-in-out infinite alternate;
+    -moz-animation: glow .25s ease-in-out infinite alternate;
+    animation: glow .25s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ff4b4b, 0 0 20px #ff4b4b, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+    }
+    to {
+      text-shadow: 0 0 20px #ff4b4b, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d, 0 0 80px #ff4d4d;
+    }
+  }
+  
+.text2 {
+    float: right;
+    margin-top: 700px;
+    margin-right: 200px; 
+}
+
+.text3 {
+    margin-top: 850px;
+    margin-left: 150px;
+}
+
+.text4 {
+    margin-top: 350px;
+    margin-left: 900px;
 }
 
 .tape {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6000px;
+    transform: translate(-700px,250px);
+    z-index: -1;
+}
+
+.cooper {
+    position: absolute;
     display: flex;
-    width: 275%;
-    transform: translateX(-700px);
-    overflow: hidden;
+    justify-content: center;
+    transform: translate(50%,25%);
+}
+
+@media all and (max-width: 1440px) {
+    p {
+        font-size: 32px;
+    }    
+
+    h1 {
+        font-size: 130px;
+    }
+
+    .text2 {
+        float: right;
+        margin-top: 500px;
+        margin-right: 100px; 
+    }
+    
+    .text3 {
+        margin-top: 650px;
+        margin-left: 75px;
+    }
+    
+    .text4 {
+        margin-top: 250px;
+        margin-left: 500px;
+    }
+    
+    .tape {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 4500px;
+        transform: translate(-700px,200px);
+    }
+
+    .cooper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        transform: translate(10%,10%);
+    }    
 }
