@@ -13,25 +13,28 @@
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    background: rgb(117,0,0);
+    background: linear-gradient(0deg, rgba(117,0,0,1) 0%, rgba(23,23,23,1) 28%);
+
 }
 
 body {
     font-family: francesco-regular;
     font-weight: 600;
     background-color: rgb(14, 14, 14);        
-    color: rgb(255, 255, 255);
+    color: #ffd2d2;
     overflow-x: hidden;
 }
 
 p {
-    font-size: 48px;
+    font-size: 60px;
 }
 
 h1 {
     text-align: center;
     font-size: 150px;
     margin-top: 5rem;
-    color: #ff6060;
+    color: #ffd2d2;
     text-align: center;
     -webkit-animation: glow .25s ease-in-out infinite alternate;
     -moz-animation: glow .25s ease-in-out infinite alternate;
@@ -63,6 +66,13 @@ h1 {
     margin-left: 900px;
 }
 
+.text2, .text3, .text4 {
+     transform: translateZ(-5) scale(1.5);
+     -webkit-animation: glow 1s ease-in-out infinite alternate;
+     -moz-animation: glow 1s ease-in-out infinite alternate;
+     animation: glow 1s ease-in-out infinite alternate; 
+}
+
 .tape {
     position: fixed;
     top: 0;
@@ -70,6 +80,7 @@ h1 {
     width: 6000px;
     transform: translate(-700px,250px);
     z-index: -1;
+    transform: translateZ(-10px) scale(2);
 }
 
 .cooper {
@@ -104,12 +115,17 @@ h1 {
         margin-left: 500px;
     }
     
+    .text2, .text3, .text4 {
+        transform: translateZ(-5) scale(1.5);
+   }   
+
     .tape {
         position: fixed;
         top: 0;
         left: 0;
         width: 4500px;
         transform: translate(-700px,200px);
+        transform: translateZ(-10px) scale(2);
     }
 
     .cooper {
