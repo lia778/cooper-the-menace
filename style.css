@@ -92,7 +92,7 @@ h1 {
 
 @media all and (max-width: 1440px) {
     p {
-        font-size: 32px;
+        font-size: 48px;
     }    
 
     h1 {
@@ -112,7 +112,7 @@ h1 {
     
     .text4 {
         margin-top: 250px;
-        margin-left: 500px;
+        margin-left: 600px;
     }
     
     .text2, .text3, .text4 {
